@@ -23,4 +23,4 @@ Two directories will be created in the root directory:
 - `bb-q20`: Contains the raw output and plots from running bufferbloat with q=20.
 - `bb-q100`: Contains the raw output and plots from running bufferbloat with q=100.
 
-The `saved_plots` directory contains plots and raw data from a previous run of the program.
+The `saved_plots` directory contains plots from a previous run of the program.
