@@ -83,7 +83,11 @@ class BBTopo(Topo):
         # h1 <-> s0 : high-bandwidth host link (default/large queue)
         # h2 <-> s0 : bottleneck link with args.bw_net and args.maxq queue (packets)
         # Note: interface ordering creates s0-eth1 for the first link and s0-eth2 for the second.
+
+        # Add link from h1 to switch
         self.addLink(hosts[0], switch, bw=args.bw_host, delay="%sms" % (args.delay))
+
+        # Add link from h2 to switch
         self.addLink(
             hosts[1],
             switch,
